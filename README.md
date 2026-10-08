@@ -87,9 +87,6 @@ The set up page also offered to create NAT gateways, which are managed AWS devic
 - **Why only 0 or 2 public subnets:** the "VPC and more" wizard creates the same number of public subnets in **every** Availability Zone you choose. With 2 AZs, the count has to be 0 or a multiple of 2. The wizard's layout follows high-availability practice, but the AZ count is the real reason for the choice.
 - **Same CIDR block:** two VPCs with overlapping CIDRs (both `10.0.0.0/16`) can exist side by side, but they **can't be peered**. AWS rejects peering connections between overlapping ranges. Plan unique ranges if the VPCs might ever need to talk to each other.
 - **NAT gateway cost:** NAT gateways bill per hour plus per GB processed, even when idle. Pick "None" in the wizard unless you need one, and delete any you create when you finish the project.
-- **Clean up:** terminate both EC2 instances and delete the extra VPC so nothing keeps billing. Store the `.pem` key file somewhere safe and never commit it to Git.
-- The last screenshot links to the same image as the cover at the top. It may have been meant to show the wizard's subnet/NAT options.
-
 ---
 
 *Built with [NextWork](https://nextwork.ai) - [View this project](https://nextwork.ai/projects/8f49d756-9e51-58c0-856a-e71e54f064ab)*
