@@ -1,5 +1,7 @@
 # Cheat Sheet: Launching VPC Resources
 
+> 📚 **Part 4 of 9** in my [AWS VPC Series](https://github.com/jasahorro/AWS-VPC-Series) · ← Previous: [Creating a Private Subnet](https://github.com/jasahorro/Creating-a-Private-Subnet/blob/main/CHEATSHEET.md) · Next: [Testing VPC Connectivity](https://github.com/jasahorro/Testing-VPC-Connectivity/blob/main/CHEATSHEET.md) →
+
 Lesson notes from the NextWork project, for quick review.
 
 ## Contents
